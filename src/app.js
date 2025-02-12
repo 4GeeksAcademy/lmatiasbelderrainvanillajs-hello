@@ -24,4 +24,40 @@ function chequeo() {
     document.getElementById("error-msg").style.display = "block"
     return
   }
+  let amountnumber = document.getElementById("amount").value
+  if (amountnumber == ""){
+    alert("missing amount")
+    document.getElementById("error-msg").style.display = "block"
+    return
+  }
+  let name = document.getElementById("nombre").value
+  if (name == ""){
+    alert("missing first name")
+    document.getElementById("error-msg").style.display = "block"
+    return
+  }
+  let lastname = document.getElementById("apellido").value
+  if (lastname == ""){
+    alert("missing last name")
+    document.getElementById("error-msg").style.display = "block"
+    return
+  }
+  let ciudad = document.getElementById("city").value
+  if (ciudad == ""){
+    alert("missing city")
+    document.getElementById("error-msg").style.display = "block"
+    return
+  }
+  let estado = document.getElementById("state").value
+  if (estado == ""){
+    alert("missing state")
+    document.getElementById("error-msg").style.display = "block"
+    return
+  }
+  let codigopostal = document.getElementById("zip").value
+  if (codigopostal == ""){
+    alert("missing postal code")
+    document.getElementById("error-msg").style.display = "block"
+    return
+}
 }
